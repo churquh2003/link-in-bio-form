@@ -1,5 +1,4 @@
 class ItemsController < ApplicationController
- 
   def index
     @list_of_items = Item.all
 
@@ -24,4 +23,5 @@ class ItemsController < ApplicationController
 
     redirect_to("/", allow_other_host: true)
   end 
-end 
+
+end
